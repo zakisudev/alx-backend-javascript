@@ -1,7 +1,7 @@
 function getResponseFromAPI() {
-    return new Promise((resolve, reject) => {
-            resolve();
-    });
+  return new Promise((resolve) => {
+    resolve();
+  });
 }
 
 export default getResponseFromAPI;
