@@ -1,9 +1,12 @@
-function cleanSet(set, startString) {
+export default function cleanSet(set, startString) {
   if (startString === '') return '';
-  return [...set]
-    .filter((item) => item.startsWith(startString))
-    .map((item) => item.slice(startString.length))
-    .join('-');
-}
 
-export default cleanSet;
+  let result = '';
+  for (let item of set) {
+    if (item.startsWith(startString)) {
+      result += `${item.slice(startString.length)}`;
+    }
+  }
+
+  return result.slice(0, -1);
+}
