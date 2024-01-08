@@ -20,10 +20,6 @@ This directory contains various examples and exercises to understand the basics 
 - [Create Employees Object](0x00-ES6_basic/11-createEmployeesObject.js)
 - [Create Report Object](0x00-ES6_basic/12-createReportObject.js)
 
-## Installation
-
-Follow the instructions in the root [README.md](../README.md) to install and set up the project.
-
 ## Usage
 
 Each file in this directory is a separate exercise or example. You can run each file individually to see the output.
