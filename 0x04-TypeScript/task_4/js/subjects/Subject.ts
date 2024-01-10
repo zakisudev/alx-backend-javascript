@@ -1,14 +1,9 @@
-namespace Subjects {
-  export interface Teacher {
-    firstName: string;
-    lastName: string;
-  }
+import { Teacher } from './Teacher';
 
-  export class Subject {
-    teacher: Teacher;
+export class Subject {
+  teacher: Teacher;
 
-    setTeacher(teacher: Teacher) {
-      this.teacher = teacher;
-    }
+  setTeacher(teacher: Teacher) {
+    this.teacher = teacher;
   }
 }
