@@ -1,12 +1,15 @@
-// full_server/server.js
 const express = require('express');
-const routes = require('./routes/index');
+const router = require('./routes/index');
 
 const app = express();
 const port = 1245;
 
-app.use('/', routes);
+app.use('/', router);
+app.use('/students', router);
+app.use('/students/:major', router);
 
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`Listening at http://localhost:${port}`);
 });
+
+module.exports = app;
