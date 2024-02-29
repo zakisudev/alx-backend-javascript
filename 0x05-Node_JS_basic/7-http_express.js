@@ -37,7 +37,7 @@ const countStudents = (dataPath) =>
             }
             const studentEntries = studentPropNames.map((propName, idx) => [
               propName,
-              studentPropValues[idx],
+              studentPropValues[idx]
             ]);
             studentGroups[field].push(Object.fromEntries(studentEntries));
           }
@@ -51,7 +51,7 @@ const countStudents = (dataPath) =>
               [
                 `Number of students in ${field}: ${group.length}.`,
                 'List:',
-                group.map((student) => student.firstname).join(', '),
+                group.map((student) => student.firstname).join(', ')
               ].join(' ')
             );
           }
